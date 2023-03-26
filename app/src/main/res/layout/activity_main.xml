@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgrounst1"
+    android:id="@+id/back_ground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@+id/textView1"
+            android:layout_weight="1"
+            android:background="@color/color_background"
+            android:clickable="true"
+            android:src="@drawable/info" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="11"
+            android:text="    حاسب معدل البكالوريا     "
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:gravity="center">
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:thumb="@drawable/swch"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        >
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:id="@+id/grid1"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:foreground="@drawable/effect1"
+                android:clickable="true"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/white_main"
+                >
+
+                <LinearLayout
+                    android:layout_width="156dp"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/run"
+                        />
+
+                    <TextView
+                        android:id="@+id/x1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sport معني ب"
+                        android:textAlignment="center"
+                        android:textColor="@color/color_write1"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardam"
+                app:cardBackgroundColor="@color/white_main"
+
+                android:foreground="@drawable/effect1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+
+
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="156dp"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/am"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/langue" />
+
+                    <TextView
+                        android:id="@+id/x2"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="معني باللغة الامازيغية"
+                        android:textAlignment="center"
+                        android:textColor="@color/color_write1"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/math_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="8dp"
+                android:clickable="true"
+                app:cardBackgroundColor="@color/white_main"
+                >
+
+                <LinearLayout
+                    android:layout_width="156dp"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:id="@+id/mat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pi"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="الرياضيات"
+                        android:textColor="@color/color_write1"
+                        android:id="@+id/x3"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mt_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/white_main"
+                >
+
+                <LinearLayout
+                    android:layout_width="156dp"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/mt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/atom"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تقني رياضي"
+                        android:id="@+id/x4"
+                        android:textColor="@color/color_write1"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sc_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/white_main"
+                >
+
+                <LinearLayout
+                    android:layout_width="156dp"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vulume"
+                        android:id="@+id/scn"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="علوم التجريبية"
+                        android:id="@+id/x5"
+                        android:textColor="@color/color_write1"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gs_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/white_main"
+                >
+
+                <LinearLayout
+                    android:layout_width="156dp"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/graphe"
+                        android:id="@+id/gas"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تسيير واقتصاد"
+                        android:id="@+id/x6"
+                        android:textColor="@color/color_write1"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lt_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/white_main"
+                >
+
+                <LinearLayout
+                    android:layout_width="156dp"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/book"
+                        android:id="@+id/ad"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="أداب وفلسفة"
+                        android:id="@+id/x7"
+                        android:textColor="@color/color_write1"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lng_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/white_main"
+                >
+
+                <LinearLayout
+                    android:layout_width="156dp"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/langue"
+                        android:id="@+id/eng"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="لغات اجنبية"
+                        android:id="@+id/x8"
+                        android:textColor="@color/color_write1"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
